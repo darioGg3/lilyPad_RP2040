@@ -346,16 +346,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "07377ca2-838c-4f7e-b751-f41f38986a18")
 		(at 114.837208 100.347703 126)
 		(property "Reference" "J11"
-			(at 0.000001 5.499999 126)
+			(at 0 -4.3 126)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ff6cded2-4a56-4390-955f-30633df9fcc9")
+			(uuid "5bcace16-662e-407d-ba65-c48a68674a9b")
 			(effects
 				(font
 					(size 1 1)
@@ -364,11 +363,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000002 126)
+			(at 0 1 126)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "6c93ddec-d20a-402a-aca1-b141c33acb8f")
+			(uuid "f15cc8fe-79ac-4790-877d-963aca29637f")
 			(effects
 				(font
 					(size 1 1)
@@ -377,11 +375,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0.000001 6 126)
+			(at 0 0 126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "448a415c-8401-4c17-986e-2cf4dfd77f38")
+			(uuid "c1192c59-90dc-4882-8dda-e3184c368771")
 			(effects
 				(font
 					(size 1 1)
@@ -390,11 +388,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0.000001 6 126)
+			(at 0 0 126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2f0c90ec-3b17-4878-ace3-53c504921b9a")
+			(uuid "c2352cb4-2b6f-4a98-830d-926cdd5a526f")
 			(effects
 				(font
 					(size 1 1)
@@ -403,11 +401,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0.000001 6 126)
+			(at 0 0 126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2e5d3651-5567-4219-80b6-0b9e30ae3741")
+			(uuid "7994b34c-a924-4dd2-a0e3-2df08e912db9")
 			(effects
 				(font
 					(size 1 1)
@@ -415,68 +413,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d5c13c30-1c86-421a-a9d5-3e000b4a780c")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "17c27777-f1e8-4117-a27f-b81600ef3311")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "678102b1-0e39-4ab4-abc6-83b556f91bce")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "7435c415-a8d0-4b23-b92d-e1b8219018fb")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.499999) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "e5c121c8-919a-423d-81e0-a64e10b0f908")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "07347f76-3c93-4872-9b37-9e4262260a2f")
+			(uuid "2bdd26e0-6438-4a8c-a7e3-1fec1db30020")
 		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.599999 -1.999998)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "2655778f-c225-4a80-81fd-7d2553793505")
-		)
-		(fp_line
-			(start -2.599999 1.999998)
-			(end -2.6 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "207a7bdd-3afd-4fea-925b-bad238d5d841")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0.000001 -3.452868)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "a253f4cf-d776-440f-8e16-104d3b4061dd")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid -0.000001 3.452868)
-			(end -2.599999 1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "54a96039-35eb-46d4-99d1-3f0b40d4d251")
+			(uuid "b44afc51-fbb3-4488-b5b0-9c64eec323a3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 -54)
+			(at 0 -0.2 126)
 			(layer "F.Fab")
-			(uuid "1cdbfbd4-f66d-45f4-a3d9-88d3ab6565bd")
+			(uuid "05eabe85-2226-4375-8464-539758062818")
 			(effects
 				(font
 					(size 1 1)
@@ -485,10 +495,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.500001 126)
+			(at 0 2.5 126)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "ade6511c-780a-41a4-88ba-21583dc4eeaa")
+			(uuid "d63d9570-efad-45b8-8dde-430bca235d14")
 			(effects
 				(font
 					(size 1 1)
@@ -497,27 +507,26 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 126)
-			(size 5 6.4)
+			(at 0 -0.3 126)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 22 "/GPIO7")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "360bcce6-7416-4b5a-a1d5-0d7bca1478c8")
+			(uuid "d476227e-5c51-435e-9272-7d54ea8da2ff")
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "09955389-b809-4898-abf5-10ba0cf18e15")
 		(at 152.678788 81.066459 -72)
 		(property "Reference" "J20"
-			(at 0 5.500001 -72)
+			(at 0 -4.3 -72)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "aa1587aa-8e9e-4656-9acf-a05fdb37f051")
+			(uuid "f49eaff0-337a-43ab-a5e4-d01070f3a9e0")
 			(effects
 				(font
 					(size 1 1)
@@ -526,11 +535,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 -72)
+			(at 0 1 -72)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "e58349e7-58bd-4f2f-b47a-352d57ae6241")
+			(uuid "f9907ada-36eb-4860-bf18-60c058c3b466")
 			(effects
 				(font
 					(size 1 1)
@@ -539,11 +547,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 5.999999 -72)
+			(at 0 0 -72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4bce75b7-b2bb-469b-8ea4-5cfc98ea6923")
+			(uuid "1773df5c-781e-46fd-844a-85901b80fd1b")
 			(effects
 				(font
 					(size 1 1)
@@ -552,11 +560,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 5.999999 -72)
+			(at 0 0 -72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c54f85df-9b8f-48ba-8ae6-044c395897c6")
+			(uuid "03c8dbd0-2ea5-4764-b468-b760adfcb44c")
 			(effects
 				(font
 					(size 1 1)
@@ -565,11 +573,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 5.999999 -72)
+			(at 0 0 -72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "416bd994-1a5e-4a05-bdb0-ab836cbe576b")
+			(uuid "0710c815-84e0-45b0-b2c2-f81e1d6f7ee1")
 			(effects
 				(font
 					(size 1 1)
@@ -577,68 +585,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/57c550a5-275f-48b4-8314-2bf2395c5520")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.200001 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "ff76351f-72ce-44f9-942d-2fe3a3577552")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "d67b8b2a-60b5-4940-bee7-3dfa93780300")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "397f8a12-9a23-4260-bd6c-720a01809a2d")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.599999) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "bc7d2937-7e8b-4252-98d5-e8ec5a4f040c")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "9c7b1f6a-11b7-41be-ac67-c74ed110bad4")
+			(uuid "39678785-8a09-409e-83fd-dce2e4926636")
 		)
-		(fp_line
-			(start -2.599999 1.999999)
-			(end -2.600002 -2.000002)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "219a10b3-39db-4ada-95d5-0b5fdebcc669")
-		)
-		(fp_line
-			(start 2.600002 2.000002)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "8f129c96-cd49-491e-9f46-062910173a4c")
-		)
-		(fp_arc
-			(start 2.600002 2.000002)
-			(mid -0.000001 3.45287)
-			(end -2.599999 1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "1090f4a2-82e0-4570-8178-df461363b798")
-		)
-		(fp_arc
-			(start -2.600002 -2.000002)
-			(mid 0.000001 -3.45287)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "aaf9cad0-7656-4e4d-9ba8-7260dfceae70")
+			(uuid "b1aa1651-6da9-4114-b6a8-969307740635")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 108)
+			(at 0 -0.2 -72)
 			(layer "F.Fab")
-			(uuid "216a9ec8-1c80-440d-92b1-a89dbff858c6")
+			(uuid "498d75ba-1cf7-4874-a520-bf6226fa197b")
 			(effects
 				(font
 					(size 1 1)
@@ -647,10 +667,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.499997 -72)
+			(at 0 2.5 -72)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "2a2b37a4-d584-4023-a842-eabc3ee51bc5")
+			(uuid "f618731c-d048-4afe-8375-ed170c66151d")
 			(effects
 				(font
 					(size 1 1)
@@ -659,15 +679,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 288)
-			(size 5 6.4)
+			(at 0 -0.3 288)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "+3V3")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "4f8b6c41-602a-4fa1-95fd-ecc0d2ab32fe")
+			(uuid "c583c9f0-7589-40ff-bcab-3c9de20c30be")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -1300,16 +1320,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "1148adb6-c468-4ab6-a333-cf5b4d6c51ca")
 		(at 152.678789 94.354188 -108)
 		(property "Reference" "J18"
-			(at 0 5.5 -108)
+			(at 0 -4.3 -108)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "fe4e1821-767e-4a40-b145-0ceb7d4115c4")
+			(uuid "5dedb27a-cc08-486c-8ec2-d4aa8c813ec1")
 			(effects
 				(font
 					(size 1 1)
@@ -1318,11 +1337,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 -108)
+			(at 0 1 -108)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "33ee32b6-c5a8-4bdc-8930-e13c509fed58")
+			(uuid "ec269754-2a74-4731-9edd-3edff92c6d23")
 			(effects
 				(font
 					(size 1 1)
@@ -1331,11 +1349,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 -108)
+			(at 0 0 -108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c453ca22-b950-4b10-bac1-300fece46d07")
+			(uuid "c93a1462-ada7-4045-b277-e218e7f2e7b8")
 			(effects
 				(font
 					(size 1 1)
@@ -1344,11 +1362,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 -108)
+			(at 0 0 -108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f0d083aa-ab0f-48c0-b355-e468f85fdb87")
+			(uuid "f944953f-e016-4e98-a4e3-7893ac8820b1")
 			(effects
 				(font
 					(size 1 1)
@@ -1357,11 +1375,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 -108)
+			(at 0 0 -108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1449a1f6-23bd-474a-9d18-d93fd1bf2f9d")
+			(uuid "9f2a02a7-ae4e-4b6f-bbb1-de8874217432")
 			(effects
 				(font
 					(size 1 1)
@@ -1369,68 +1387,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8649ad0b-de5d-45cc-9666-b4e2f0520651")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "c979410a-4826-4a88-93b3-9aa7b73d8e88")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "4c906fa4-0043-458c-bbe2-fb051bf9d86f")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "3fad3e32-62e6-4807-b07b-362329d522cb")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.599999)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "14bb7445-fa19-4fa1-b387-235722fbfa7e")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "d06b9d45-0419-407b-96cc-357e3aed8f0d")
+			(uuid "d8e99791-cdb1-4791-86aa-aa309307ddd0")
 		)
-		(fp_line
-			(start 2.6 2.000001)
-			(end 2.599999 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "cf0618e9-d4eb-437a-805c-952e940b4be7")
-		)
-		(fp_line
-			(start -2.599999 2)
-			(end -2.6 -2.000001)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "87eba256-57b1-4ba9-9650-b6dadb347667")
-		)
-		(fp_arc
-			(start 2.6 2.000001)
-			(mid 0 3.452868)
-			(end -2.599999 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "8eaf16ff-3b28-458e-8b98-83e392c93cf0")
-		)
-		(fp_arc
-			(start -2.6 -2.000001)
-			(mid 0 -3.452868)
-			(end 2.599999 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "b7135892-1152-4f46-b641-b8649fac37dd")
+			(uuid "bd4721cd-3929-46b8-9a17-b037822e2531")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 252)
+			(at 0 2.5 -108)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "179e02bd-6248-4040-9e65-52fb6c9f4bce")
+			(uuid "605a8dfb-5cdd-4729-a568-938125b16eac")
 			(effects
 				(font
 					(size 1 1)
@@ -1439,10 +1470,9 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.000001 8.499999 -108)
-			(unlocked yes)
+			(at 0 -0.2 -108)
 			(layer "F.Fab")
-			(uuid "7a0b013b-6930-4710-beea-33d110bd6a95")
+			(uuid "c31c2bcd-d670-4670-a3b7-6b265166e091")
 			(effects
 				(font
 					(size 1 1)
@@ -1451,15 +1481,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 252)
-			(size 5 6.4)
+			(at 0 -0.3 252)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 45 "/GPIO27_ADC1")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "cb8d6569-da3c-44b8-b1cb-17dbba0c8568")
+			(uuid "5767c9b3-3c3f-4a6a-963b-e3dd2bb8ce51")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -1672,16 +1702,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "1fbe3dbc-c145-4a15-81e2-7820fc915389")
 		(at 111.783358 81.066458 72)
 		(property "Reference" "J8"
-			(at 0 5.5 72)
+			(at 0 -4.3 72)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "b89005ac-c3e1-4c91-8eb3-e29be0392480")
+			(uuid "acfafed3-0cab-4260-9f5f-8148f765cc0e")
 			(effects
 				(font
 					(size 1 1)
@@ -1690,11 +1719,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 72)
+			(at 0 1 72)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "0092d3a1-74d5-43fa-a9fe-1ac19beb0c05")
+			(uuid "acb7c0c1-919f-4448-a5ac-8ef0420791fe")
 			(effects
 				(font
 					(size 1 1)
@@ -1703,11 +1731,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 72)
+			(at 0 0 72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08c77f1b-1523-46ac-9dd2-39eb3b7c8815")
+			(uuid "3e788394-e38a-490f-a7fb-f61fb6e4eadc")
 			(effects
 				(font
 					(size 1 1)
@@ -1716,11 +1744,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 72)
+			(at 0 0 72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ca555128-1c05-4bb4-87e3-b5fb2ca21989")
+			(uuid "398e6f8b-5655-4ef3-885b-75cd5e9c76be")
 			(effects
 				(font
 					(size 1 1)
@@ -1729,11 +1757,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 72)
+			(at 0 0 72)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2adff2aa-a535-4716-b6ee-38bfb7a99b86")
+			(uuid "57e41878-21ac-43aa-82ab-b0334f9feda3")
 			(effects
 				(font
 					(size 1 1)
@@ -1741,69 +1769,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/4f8b19a0-7d19-47e4-82bb-11937af3d085")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "c3915c7e-746d-4b0c-b756-93beb955db35")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "bacaf558-3037-4d0f-8ee9-37b77b4a5369")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "f96761ec-695b-4b64-8726-8073302c2479")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.599999)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "c2eaafff-e1f0-4efa-937b-38ef4c1d3e1a")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "e7b120c5-a115-4b20-8439-4fcb27e52c3a")
+			(uuid "b66bcbdd-7aab-48ae-a437-da267145fa37")
 		)
-		(fp_line
-			(start -2.599999 2)
-			(end -2.6 -2.000001)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "38c9f2bc-ba9b-47a3-bb33-0199f5ccbb7a")
-		)
-		(fp_line
-			(start 2.6 2.000001)
-			(end 2.599999 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "1f43ab0e-2ad5-4149-b162-8a7dc7ec7f55")
-		)
-		(fp_arc
-			(start -2.6 -2.000001)
-			(mid 0 -3.452868)
-			(end 2.599999 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "5491160e-6e96-468f-9a04-08571189995c")
-		)
-		(fp_arc
-			(start 2.6 2.000001)
-			(mid 0 3.452868)
-			(end -2.599999 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "18d1cd0b-732f-4c8e-a232-6285bb732d88")
+			(uuid "4e79d961-0172-4b2f-ba2b-26cf012fa1e1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.000001 8.499999 72)
-			(unlocked yes)
+			(at 0 -0.2 72)
 			(layer "F.Fab")
-			(uuid "122114ce-5124-4db1-8438-0244aae27ad2")
+			(uuid "2c053297-17cb-473b-a502-217d1833e7db")
 			(effects
 				(font
 					(size 1 1)
@@ -1812,9 +1851,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 72)
+			(at 0 2.5 72)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "c1c71dce-79da-48f8-8ac1-70cf0218c6a0")
+			(uuid "e5ea5deb-cf89-40c4-b1ef-eb14cc5c0e5c")
 			(effects
 				(font
 					(size 1 1)
@@ -1823,15 +1863,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 72)
-			(size 5 6.4)
+			(at 0 -0.3 72)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 19 "/GPIO4")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "2535c996-94fb-400b-93c2-fb770b3634ea")
+			(uuid "51c2a5a8-c4a8-433a-abd9-b0b13937beb8")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -2044,16 +2084,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "38c75c11-1f78-4e63-851a-26af2f092ede")
 		(at 132.231074 66.210323)
 		(property "Reference" "J4"
-			(at -0.000001 5.5 0)
+			(at 0 -4.3 0)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "c0e206b9-2edd-4209-9218-0cb656fd7620")
+			(uuid "cc2a25c8-f3ab-4442-98fb-c149755758e5")
 			(effects
 				(font
 					(size 1 1)
@@ -2062,11 +2101,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 7.000001 0)
+			(at 0 1 0)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "61d357af-8776-4cd4-b2bf-57996f1fe035")
+			(uuid "45d2401f-e392-4593-a463-510c524d5490")
 			(effects
 				(font
 					(size 1 1)
@@ -2075,11 +2113,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 0)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8f09b456-e1dc-43cf-b9b6-81c9bf8237a0")
+			(uuid "1fc65968-88ce-43cc-93c7-3720b8a226c6")
 			(effects
 				(font
 					(size 1 1)
@@ -2088,11 +2126,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 0)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "73e924d8-25cb-416d-bcf0-cff90a19332f")
+			(uuid "51f335da-5e09-461a-b1ac-b7ccb4010076")
 			(effects
 				(font
 					(size 1 1)
@@ -2101,11 +2139,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 0)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f68bdc91-fd44-4cd2-b915-e7ad8b2c7303")
+			(uuid "01d5bcbd-fce5-4448-896d-676ba6970691")
 			(effects
 				(font
 					(size 1 1)
@@ -2113,69 +2151,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/55a76be4-7874-499c-a489-f01d6578b2f9")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "d8869fa5-3d07-4f71-80ea-707d61386604")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "13c280f0-048c-4a3d-9469-acee2f940e79")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "bd4e37de-6fab-4fb0-bc4a-9ec9a301b9fe")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "2ba62bae-ea5e-46e9-9eae-b9730166630a")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "3689d954-62d9-4ab5-8d92-95cbdc75b14c")
+			(uuid "de94e3f1-219b-4670-9177-ae4a8faf2c40")
 		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.600001 -1.999998)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "82175eca-00a2-4f91-9926-4f804d4aa251")
-		)
-		(fp_line
-			(start 2.600001 1.999998)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "5ce4513c-4ff3-4ef5-9c1f-31aced349337")
-		)
-		(fp_arc
-			(start -2.600001 -1.999998)
-			(mid -0.000001 -3.452868)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "70fc6ec2-7b72-4c08-aa0e-8c9dd652d0a1")
-		)
-		(fp_arc
-			(start 2.600001 1.999998)
-			(mid 0.000001 3.452868)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "b900d7ec-ca12-4259-b6e0-c28636865d0e")
+			(uuid "96a3866c-2bc2-4be2-b9b4-d50d0125b435")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.499999 0)
-			(unlocked yes)
+			(at 0 -0.2 0)
 			(layer "F.Fab")
-			(uuid "3e10bd37-d80e-4f27-ad74-6cef65b216ab")
+			(uuid "c72a9a11-735b-4595-af9c-90fe7bda0700")
 			(effects
 				(font
 					(size 1 1)
@@ -2184,9 +2233,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.199998 0)
+			(at 0 2.5 0)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "de3e8598-7842-4cea-9131-dfb97fcb6ae4")
+			(uuid "ea3e0637-251d-41d9-babf-0cc0be670d44")
 			(effects
 				(font
 					(size 1 1)
@@ -2195,27 +2245,26 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0)
-			(size 5 6.4)
+			(at 0 -0.3)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 15 "/GPIO0{slash}TX0")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "67759d22-1d21-4137-9a67-4dbf5df37e7e")
+			(uuid "c6941d2e-2f76-4fe2-9ff8-7c7acd5de9c6")
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "4630398e-1d77-4680-99eb-de78342eb552")
 		(at 125.587208 108.158039 162)
 		(property "Reference" "J13"
-			(at 0 5.5 162)
+			(at 0 -4.3 162)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "0bdb3069-4802-4e98-aa3d-60bfe862959e")
+			(uuid "f7fd0154-abfa-4db6-967c-72bbcd12c48f")
 			(effects
 				(font
 					(size 1 1)
@@ -2224,11 +2273,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 162)
+			(at 0 1 162)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "65b26b4a-893c-44c7-83b7-bd1daaada790")
+			(uuid "36e598bf-0724-493d-beb1-d1f1ae990c31")
 			(effects
 				(font
 					(size 1 1)
@@ -2237,11 +2285,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 162)
+			(at 0 0 162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e207932-1823-4482-95ac-c9f5ac9b1ce5")
+			(uuid "6e8b3527-5140-45fb-b558-4c038ae07b8f")
 			(effects
 				(font
 					(size 1 1)
@@ -2250,11 +2298,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 162)
+			(at 0 0 162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c6c1d39d-80d7-4449-96d4-b9c2e719a5af")
+			(uuid "8895df82-5d1a-40ab-ac7e-4051b724e47a")
 			(effects
 				(font
 					(size 1 1)
@@ -2263,11 +2311,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 162)
+			(at 0 0 162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4366fb70-97b4-443d-8582-667622cb0420")
+			(uuid "3db8d11d-d17d-489b-9a7f-2880ccd8aa2c")
 			(effects
 				(font
 					(size 1 1)
@@ -2275,69 +2323,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/1325233d-4072-4785-9fa0-f96e12681b3d")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "2d4c90a8-0ffd-4d6c-a986-2410833fa9da")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "0d386870-2a67-4d90-ad60-7ad58cdd4d99")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.599999)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "157e5d85-0389-4720-93f1-d34f4a7b33bd")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.599999)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "affb0c77-748c-4d1d-b75f-6ccfea00b252")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "d08924e5-2b5c-4b38-826b-a9fb7db3766e")
+			(uuid "a8fff21a-0fcc-45b2-8f05-5830912c94ae")
 		)
-		(fp_line
-			(start 2.6 2.000001)
-			(end 2.599999 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "c88fffd9-5032-4afb-b956-937c0542c284")
-		)
-		(fp_line
-			(start -2.599999 2)
-			(end -2.6 -2.000001)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "d3b45a37-1830-4de4-9053-be0666ab3c9c")
-		)
-		(fp_arc
-			(start 2.6 2.000001)
-			(mid 0 3.452868)
-			(end -2.599999 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "e90858d4-2686-4327-8703-46bbce2ce4e5")
-		)
-		(fp_arc
-			(start -2.6 -2.000001)
-			(mid 0 -3.452868)
-			(end 2.599999 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "3de70a45-0f50-4c18-a3ee-4f248dd8cab8")
+			(uuid "6deadf06-71ae-4721-9004-30da9c210bc1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.000001 8.499999 162)
-			(unlocked yes)
+			(at 0 -0.2 162)
 			(layer "F.Fab")
-			(uuid "19667983-53cd-487c-88a2-e708752dfb7f")
+			(uuid "1ec4aeaf-65e9-4579-8485-c5c1e999c48d")
 			(effects
 				(font
 					(size 1 1)
@@ -2346,9 +2405,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 342)
+			(at 0 2.5 162)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "d8b829dc-5682-4628-b15f-258bb7172e48")
+			(uuid "7678a762-9c14-4804-817d-08b8710c8d54")
 			(effects
 				(font
 					(size 1 1)
@@ -2357,15 +2417,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 162)
-			(size 5 6.4)
+			(at 0 -0.3 162)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 24 "/GPIO9")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "c4d42936-7912-4ffc-86b2-be74cffb45f6")
+			(uuid "8eb414b6-c31f-454c-a4f1-f31b3e30d810")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
@@ -2578,16 +2638,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "58fa7b51-4617-43d9-874f-4840e3ae2276")
 		(at 149.62494 100.347705 -126)
 		(property "Reference" "J17"
-			(at -0.000001 5.499999 -126)
+			(at 0 -4.3 -126)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ee1d54e8-5d09-4f25-b161-ed436f5e87fb")
+			(uuid "0eb3edfc-44ab-4268-9ed7-f568e347692b")
 			(effects
 				(font
 					(size 1 1)
@@ -2596,11 +2655,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 6.999997 -126)
+			(at 0 1 -126)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "cd1d97ae-de6a-43bb-82b7-1046f8477c0e")
+			(uuid "fbc451e3-d727-4789-a279-426a62fa4100")
 			(effects
 				(font
 					(size 1 1)
@@ -2609,11 +2667,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 -126)
+			(at 0 0 -126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b29aa580-0825-4e6d-9ad7-20c7f194dc44")
+			(uuid "d6febdab-b3df-4747-9bb0-8838f808f4b4")
 			(effects
 				(font
 					(size 1 1)
@@ -2622,11 +2680,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 -126)
+			(at 0 0 -126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5883b49-6207-455a-961a-aa426c504344")
+			(uuid "132b1ee1-69e6-47bf-9b2a-a3c407cc06ea")
 			(effects
 				(font
 					(size 1 1)
@@ -2635,11 +2693,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 -126)
+			(at 0 0 -126)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "16123509-d088-4c17-848b-60218cc4c943")
+			(uuid "8ca7d8a1-0f11-476e-a6c1-c4fedcef36f5")
 			(effects
 				(font
 					(size 1 1)
@@ -2647,69 +2705,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/26c8ecea-cff0-4aa9-9e21-8e2073814e13")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "e074a9af-843a-49c4-9370-bf9784f0f7b0")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "a4df6670-fbd2-47fc-933b-bc3a8f9148e4")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "7f47fc38-c20e-4a5f-b307-4a55056fd154")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.499999) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "f909104b-fd93-4827-b211-12ad1dbf22e7")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "4f48abde-444b-402b-9515-e39d4e051ef7")
+			(uuid "d2e40918-46f6-42c3-b7bc-4944cb2ea474")
 		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.6 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "82806192-fd0b-4ab2-93e0-b6d311f2d363")
-		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.6 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "8c29929f-33f8-4bf1-a5ef-731f2c411ab6")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid 0 3.452867)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "bf1bcd0f-81a5-44cc-b965-813cefa7f61f")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0 -3.452867)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "1e1fe450-2f86-4e34-9537-69b3064cc64b")
+			(uuid "a259f896-cbd4-4b79-9543-0b95246d50b3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.5 -126)
-			(unlocked yes)
+			(at 0 -0.2 -126)
 			(layer "F.Fab")
-			(uuid "c2a0fd10-a913-4672-a434-caee3f117a1c")
+			(uuid "a9f43685-73bc-4223-8747-04295041ff25")
 			(effects
 				(font
 					(size 1 1)
@@ -2718,9 +2787,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -0.200001 -126)
+			(at 0 2.5 -126)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "d81570e3-e7f0-4fdf-bb28-8990623315d1")
+			(uuid "e243c918-4c8a-4f57-9307-2d11e1ffe5ce")
 			(effects
 				(font
 					(size 1 1)
@@ -2729,15 +2799,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 234)
-			(size 5 6.4)
+			(at 0 -0.3 234)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 50 "/GPIO26_ADC0")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "69f214f8-0e42-4f94-9375-a283e9003b1d")
+			(uuid "7f0989ea-a1a7-4a6f-bff3-9092156b5694")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
@@ -3854,16 +3924,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "69d3c867-b283-4459-aef1-1bef78c0537b")
 		(at 125.587208 67.262609 18)
 		(property "Reference" "J5"
-			(at 0 5.500001 18)
+			(at 0 -4.3 18)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "a951280d-b39c-475a-b323-70d862c8e8fe")
+			(uuid "d022f045-7735-48f8-acb8-ecd8ca063462")
 			(effects
 				(font
 					(size 1 1)
@@ -3872,11 +3941,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 18)
+			(at 0 1 18)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "acf99bf8-7372-4432-96fd-84266b043fb9")
+			(uuid "21ec9b66-353b-4304-9600-7ec79c5272f0")
 			(effects
 				(font
 					(size 1 1)
@@ -3885,11 +3953,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 5.999999 18)
+			(at 0 0 18)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c6884a2d-86aa-4b32-b556-410907e4985e")
+			(uuid "7e37fad9-ab36-44cd-8b85-ba9f87e2d088")
 			(effects
 				(font
 					(size 1 1)
@@ -3898,11 +3966,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 5.999999 18)
+			(at 0 0 18)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9200ec03-cc2b-430e-8a2f-2a800bb3b8a6")
+			(uuid "dd4bff81-d97f-498b-8a6a-fa2a51a36f94")
 			(effects
 				(font
 					(size 1 1)
@@ -3911,11 +3979,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 5.999999 18)
+			(at 0 0 18)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "816b6dcc-8633-4886-976e-27ae0bf838cc")
+			(uuid "6ee082cd-4957-46a5-99a2-8d9190ba5b5e")
 			(effects
 				(font
 					(size 1 1)
@@ -3923,68 +3991,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/5402d1ee-7b25-4b4d-9f1c-f34a100a1290")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.200001 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "9f1be3f3-52b7-4f9e-84bc-b78ab7ede7f1")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "fc3c4c31-6846-4e4a-91a5-7960f2755951")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "d5192654-57e4-4b63-815c-5b62c74f0ec4")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.599999) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "96170b81-7eac-47a4-8006-2210d26d2c0b")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "ed11cc43-e8e9-4f5d-842a-92e090057f7d")
+			(uuid "fec16554-d255-4c7a-bcf2-8d2dff831cf1")
 		)
-		(fp_line
-			(start -2.599999 1.999999)
-			(end -2.600002 -2.000002)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "04623d38-5022-48b7-b5cb-7904feae38ca")
-		)
-		(fp_line
-			(start 2.600002 2.000002)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "d34dc3dc-d34b-421d-89d4-bdd42df50b9f")
-		)
-		(fp_arc
-			(start -2.600002 -2.000002)
-			(mid 0.000001 -3.45287)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "42878de9-a68b-4e46-a22d-14021a767d5d")
-		)
-		(fp_arc
-			(start 2.600002 2.000002)
-			(mid -0.000001 3.45287)
-			(end -2.599999 1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "16f32e57-cd08-4c45-9fc2-47cf4736e685")
+			(uuid "b30825c6-219a-41c1-bc5f-c2fcb052f527")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 18)
+			(at 0 2.5 18)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "7971df2a-c31b-4029-8703-bc41a3dfea01")
+			(uuid "98c5d6cb-ac7a-4327-9c75-7e4c2706d9b7")
 			(effects
 				(font
 					(size 1 1)
@@ -3993,10 +4074,9 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.499997 18)
-			(unlocked yes)
+			(at 0 -0.2 18)
 			(layer "F.Fab")
-			(uuid "80544f15-b30f-41da-ac81-3247cdb30886")
+			(uuid "fc39dfa9-e996-48ce-b096-5dc42caa5c8d")
 			(effects
 				(font
 					(size 1 1)
@@ -4005,27 +4085,26 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 18)
-			(size 5 6.4)
+			(at 0 -0.3 18)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 16 "/GPIO1{slash}RX0")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "53a6cb5e-d172-482b-8fa7-879364a8e9b8")
+			(uuid "979ff325-e86d-4380-90ad-484e38272b92")
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "6d19bdcc-a6f9-4987-8142-2c466f5e45a5")
 		(at 119.593689 105.104186 144)
 		(property "Reference" "J12"
-			(at -0.000001 5.499999 144)
+			(at 0 -4.3 144)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7210fc83-5bf5-44db-a0d3-58e13c48b191")
+			(uuid "73e18bad-3ee3-445e-bfd7-9d92adb88ef2")
 			(effects
 				(font
 					(size 1 1)
@@ -4034,11 +4113,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 6.999997 144)
+			(at 0 1 144)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "20ee6fbb-ef7f-459b-9504-b0618d65c72e")
+			(uuid "58df108c-a21b-400a-99c2-170803dc7715")
 			(effects
 				(font
 					(size 1 1)
@@ -4047,11 +4125,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 144)
+			(at 0 0 144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ff2390ce-c7d0-4441-b038-23e5ec4dda5a")
+			(uuid "4c659d18-1d08-445c-b1a6-b1ed13042c8c")
 			(effects
 				(font
 					(size 1 1)
@@ -4060,11 +4138,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 144)
+			(at 0 0 144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9c93b35e-5acb-4fc6-865e-756fb580805b")
+			(uuid "b4c1c44b-ea3c-4a70-8644-83ef5d36840e")
 			(effects
 				(font
 					(size 1 1)
@@ -4073,11 +4151,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 144)
+			(at 0 0 144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3d3a89d-d69f-4be7-945f-66c80d607ec8")
+			(uuid "43bad7ba-db49-4fd2-98b8-ecf403ad9d30")
 			(effects
 				(font
 					(size 1 1)
@@ -4085,69 +4163,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/133011de-8e12-4dfa-a7ed-96f32296424e")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "a23e87dd-41af-4c1d-95fd-c66f5acc6735")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "bdf6cd8e-c9ce-4663-8200-c7db060add12")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "3f0c4998-92e5-4d85-aff4-6886421b2bf7")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.499999) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "0ed8f7b2-4325-4394-9b4b-9ae6423149e5")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "14f4a6e5-1ae8-4ab3-b51d-7ed2f4fcc522")
+			(uuid "c55e4832-ac2e-4f24-bc87-96f89e9fdd4a")
 		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.6 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "33b8d703-2756-4f35-a530-f80bd0c53b75")
-		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.6 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "de3c5efb-702d-4098-9eea-31344790d41a")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid 0 3.452867)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "4d31d9e1-975f-4a04-b20f-635fc33eb5b7")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0 -3.452867)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "db58f68b-c281-4f01-b35c-219688fc28b0")
+			(uuid "e2c89d37-df25-4097-a642-e75f08f1bb87")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.5 144)
-			(unlocked yes)
+			(at 0 -0.2 144)
 			(layer "F.Fab")
-			(uuid "5944a6d1-debb-48e0-8e0e-35308b389e0b")
+			(uuid "6dd710dc-6b41-4596-b18b-9149864c7608")
 			(effects
 				(font
 					(size 1 1)
@@ -4156,9 +4245,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -0.200001 -36)
+			(at 0 2.5 144)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "e0e8e745-b3ca-4ca9-95ec-c42d77d80205")
+			(uuid "d665762b-f886-4ed3-aa18-0dc9c34d2acf")
 			(effects
 				(font
 					(size 1 1)
@@ -4167,15 +4257,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 144)
-			(size 5 6.4)
+			(at 0 -0.3 144)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 23 "/GPIO8")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "e91fb1f0-6f5d-4449-bcc1-7156af129f91")
+			(uuid "6f89db09-5e6f-406e-96cf-023f999f28ee")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -4388,16 +4478,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "7c6c9f60-2fae-4c5d-b08d-3b784bee64e3")
 		(at 114.837207 75.07294 54)
 		(property "Reference" "J7"
-			(at -0.000001 5.499999 54)
+			(at 0 -4.3 54)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "5020c231-26d2-4248-ba16-9bb6df08955d")
+			(uuid "b61efc43-2907-4c91-9f7f-932ed1cc05d7")
 			(effects
 				(font
 					(size 1 1)
@@ -4406,11 +4495,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 6.999997 54)
+			(at 0 1 54)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "29421bb3-d3e6-4c11-a589-95a217d981fa")
+			(uuid "6f314694-1cc8-46ec-bbbf-49cf8f859245")
 			(effects
 				(font
 					(size 1 1)
@@ -4419,11 +4507,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 54)
+			(at 0 0 54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93fa2b23-2761-4eb5-85ea-bfad21e18925")
+			(uuid "d0172975-1818-4375-9d78-b908c4823483")
 			(effects
 				(font
 					(size 1 1)
@@ -4432,11 +4520,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 54)
+			(at 0 0 54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a5215609-df7b-4994-af4c-8adc439c4002")
+			(uuid "6d194a93-a9a3-4894-865c-97e78be81cc3")
 			(effects
 				(font
 					(size 1 1)
@@ -4445,11 +4533,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 54)
+			(at 0 0 54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "05263819-8a25-44de-80e7-7f303960ec9e")
+			(uuid "2320a519-be5d-47fe-b88c-2ab1159e52bb")
 			(effects
 				(font
 					(size 1 1)
@@ -4457,69 +4545,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/7dd2d219-952b-45df-8a96-5b22b444cc1c")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "6ee1261a-d2f5-4184-aa0d-a85748d37ca2")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "2d548d2f-5483-4430-85e0-250b1c60a311")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "ff823a33-82c1-4f65-8274-f2569d19362a")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.499999) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "1d1a34a1-264d-4396-a00e-e69b8a45c51f")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "e58fca2d-ce4e-4544-a07e-1548ec0a4e42")
+			(uuid "c29410f7-b7c9-4f33-a58e-791ad9868b32")
 		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.6 -1.999999)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "38160eec-0cca-4d74-87d4-46a5bd0876c9")
-		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "ac43da13-a13f-4c25-a5cb-5b64f535f15b")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0 -3.452867)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "3ad99b41-60f9-4bd2-a366-606a2623430a")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid 0 3.452867)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "90058f33-a720-47c6-80f1-213ef0126cf0")
+			(uuid "7572b380-a69e-4c1e-af2b-a78cbb44932c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.5 54)
+			(at 0 2.5 54)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "0fb2b2ed-e1cb-4096-a395-3e5cb72adb4a")
+			(uuid "5a34a002-a5ab-4264-b68e-e29988d999dc")
 			(effects
 				(font
 					(size 1 1)
@@ -4528,9 +4628,9 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 -0.200001 54)
+			(at 0 -0.2 54)
 			(layer "F.Fab")
-			(uuid "be3d768a-d2dd-459c-9979-96efa630bf6d")
+			(uuid "8bfc75f1-386e-4150-99e8-224ea2d847f2")
 			(effects
 				(font
 					(size 1 1)
@@ -4539,15 +4639,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 54)
-			(size 5 6.4)
+			(at 0 -0.3 54)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 18 "/GPIO3")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "d7219d26-8acb-4b6b-855a-dd6a8af2ee19")
+			(uuid "193a011d-620e-49f5-b4ee-14d02a0ac4ff")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -4557,7 +4657,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at 0 -1.43 243)
+			(at 0 -1.43 -117)
 			(layer "F.SilkS")
 			(uuid "b307eb0a-788c-47d7-9650-3f13abb5734b")
 			(effects
@@ -4568,7 +4668,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 0 1.43 243)
+			(at 0 1.43 -117)
 			(layer "F.Fab")
 			(uuid "da9cf1a3-3ad1-4d3e-a575-cbf6e98a3c15")
 			(effects
@@ -4720,7 +4820,7 @@
 			(uuid "30ab42a0-57ca-4504-a6c2-673f244874bb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 243)
+			(at 0 0 -117)
 			(layer "F.Fab")
 			(uuid "f001472b-3ce4-4b32-9e82-98af042eecfc")
 			(effects
@@ -4970,16 +5070,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "9274be28-6ed1-4c61-ba06-57ba27c8acc2")
 		(at 149.624939 75.07294 -54)
 		(property "Reference" "J21"
-			(at 0.000001 5.499999 -54)
+			(at 0 -4.3 -54)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "a3439655-1c6b-4827-88da-5ebbc2f7158b")
+			(uuid "425e89fb-5f05-457a-a1da-23fff8c9c956")
 			(effects
 				(font
 					(size 1 1)
@@ -4988,11 +5087,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000002 -54)
+			(at 0 1 -54)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "051401e9-1bdf-4de1-8598-f77b6ce86b73")
+			(uuid "d505cf06-4def-4688-a644-bc4796d790f1")
 			(effects
 				(font
 					(size 1 1)
@@ -5001,11 +5099,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0.000001 6 -54)
+			(at 0 0 -54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cb0f91c5-ece8-4803-a62f-85f73dcbca1b")
+			(uuid "4e0c5e1b-e576-4ce4-8513-c5769c97a9d5")
 			(effects
 				(font
 					(size 1 1)
@@ -5014,11 +5112,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0.000001 6 -54)
+			(at 0 0 -54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "40e2f706-f3e4-43cc-935c-f0d682d99440")
+			(uuid "327d85b6-b1bb-485e-99c1-3430573d4cd2")
 			(effects
 				(font
 					(size 1 1)
@@ -5027,11 +5125,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0.000001 6 -54)
+			(at 0 0 -54)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6a4770f1-767f-41ed-8ddd-d124cd541cbb")
+			(uuid "40970a34-705d-4d83-99a2-6acfd509f270")
 			(effects
 				(font
 					(size 1 1)
@@ -5039,69 +5137,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/94d3788b-f315-4b81-aa3f-97e8a0d195e6")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "76db532e-4eed-4163-b429-22b2d92e1ee6")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "94cc49b3-b39f-422c-ac3a-bd849679894c")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "7fc0b2e9-e38e-4ac6-bd59-c5eb25cce688")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.499999) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "be503735-d21a-4bf8-9537-31dd7293f90c")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "fbd3c9f1-de87-4855-8f20-82a69f5e5d0f")
+			(uuid "2477d57f-5c6f-4d08-817e-79f961e4e77e")
 		)
-		(fp_line
-			(start -2.599999 1.999998)
-			(end -2.6 -1.999999)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "6783a19f-ce8e-46d4-a0f7-05c56f31c31d")
-		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "efc7b396-7bed-4c53-affa-6a0c8c3549f8")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid -0.000001 3.452868)
-			(end -2.599999 1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "0d41b8bc-ed6c-4d1c-9029-6624669b28d0")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0.000001 -3.452868)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "2813d281-694a-49d7-952d-92b743d612b7")
+			(uuid "2cdaf6ff-b9b8-4c03-8e41-b5244935cac8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.500001 -54)
-			(unlocked yes)
+			(at 0 -0.2 -54)
 			(layer "F.Fab")
-			(uuid "1577f088-4b19-413f-b5cc-c2119146bb1a")
+			(uuid "16dc5df3-52f2-44a7-bc06-cb1a4a537375")
 			(effects
 				(font
 					(size 1 1)
@@ -5110,9 +5219,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 126)
+			(at 0 2.5 -54)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "e62f72b4-e2b7-4071-a8aa-44f624c01c40")
+			(uuid "fd7163c8-1126-461f-a791-8acd01bf0619")
 			(effects
 				(font
 					(size 1 1)
@@ -5121,15 +5231,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 306)
-			(size 5 6.4)
+			(at 0 -0.3 306)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "55c945be-2266-4b5a-83e5-ee79f5be0f7a")
+			(uuid "52b99e45-35e5-4d5a-b8cf-6684810ed915")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -5139,7 +5249,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -1.43 243)
+			(at 0 -1.43 -117)
 			(layer "F.SilkS")
 			(uuid "b6bc22d8-8512-46f5-a71e-762d4a238258")
 			(effects
@@ -5150,7 +5260,7 @@
 			)
 		)
 		(property "Value" "27R"
-			(at 0 1.43 243)
+			(at 0 1.43 -117)
 			(layer "F.Fab")
 			(uuid "7832d615-44c4-4e47-97d9-3674a92c3288")
 			(effects
@@ -5302,7 +5412,7 @@
 			(uuid "19dbea77-a48c-4187-a45a-41b4caa26f3b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 243)
+			(at 0 0 -117)
 			(layer "F.Fab")
 			(uuid "f87586fe-95ee-4b28-8c37-5803ee9da7aa")
 			(effects
@@ -5342,16 +5452,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "9ebb1358-74ae-4100-b57f-22afecdfd219")
 		(at 153.731073 87.710321 -90)
 		(property "Reference" "J19"
-			(at -0.000001 5.5 -90)
+			(at 0 -4.3 -90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "d460f090-2a78-4620-ae53-b10d272ab0ab")
+			(uuid "9733c7ae-9c76-4877-83c6-8442813e3665")
 			(effects
 				(font
 					(size 1 1)
@@ -5360,11 +5469,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 7.000001 -90)
+			(at 0 1 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb6bdf6a-c1e8-4fb0-9331-91ba4e375382")
+			(uuid "ce5b4ba4-83ca-4a03-a596-72ceb9b723ef")
 			(effects
 				(font
 					(size 1 1)
@@ -5373,11 +5481,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 -90)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a956e4ee-6326-4b1f-acd6-2d5e8b225067")
+			(uuid "6524e7e3-e329-4d9e-9e2c-ef5957aa2677")
 			(effects
 				(font
 					(size 1 1)
@@ -5386,11 +5494,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 -90)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fc037e00-bc0d-4e27-a6ee-996feb38a40c")
+			(uuid "ae7d22ef-96f1-434c-a1ca-0acb947b5802")
 			(effects
 				(font
 					(size 1 1)
@@ -5399,11 +5507,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 -90)
+			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "06247222-e792-49c9-b06f-bf236a3de033")
+			(uuid "79af8e56-0d44-4c14-8e10-bd7ce5c8c5a4")
 			(effects
 				(font
 					(size 1 1)
@@ -5411,68 +5519,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/df62f166-4f11-4652-8a63-c87bfef019c2")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "ef375972-ebb2-4466-b866-5d36d2e17212")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "918ad3f0-4743-4372-bac8-b6a6dc492216")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "6faea4d9-bcc0-42e0-9a31-5c42ebb66aee")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "9ec4de51-2587-4dac-8eb3-5dcab5dfc553")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "ec5c382e-9550-4795-85ee-8dac0d342d40")
+			(uuid "16ec9c7b-c6d2-4200-b1db-91d99fde52c6")
 		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.600001 -1.999998)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "e3505e2a-cd3b-4a95-9998-9265c3fb9214")
-		)
-		(fp_line
-			(start 2.600001 1.999998)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "05191aef-bb33-4d0f-b01d-3b015fdb4bf7")
-		)
-		(fp_arc
-			(start 2.600001 1.999998)
-			(mid 0.000001 3.452868)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "5c0adde8-a7dd-47f3-a157-29f7964389e5")
-		)
-		(fp_arc
-			(start -2.600001 -1.999998)
-			(mid -0.000001 -3.452868)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "72490297-e37d-4ab6-9b1e-8ceb872a4fcc")
+			(uuid "8dd6bdcc-db7d-4ac7-ab30-200a553e7bef")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.199998 90)
+			(at 0 -0.2 -90)
 			(layer "F.Fab")
-			(uuid "2728ef2e-3e71-49b2-bd48-c423b85a26ff")
+			(uuid "06d4b9be-1505-4453-aa8a-05a989951f7e")
 			(effects
 				(font
 					(size 1 1)
@@ -5481,10 +5601,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.499999 -90)
+			(at 0 2.5 -90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "7f24956c-921a-4c90-96d5-a5fd4c5723d7")
+			(uuid "ea64071d-ff1f-4d1b-a300-306ca9717e0e")
 			(effects
 				(font
 					(size 1 1)
@@ -5493,15 +5613,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 270)
-			(size 5 6.4)
+			(at 0 -0.3 270)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 37 "/GPIO28_ADC2")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "79e7eeb0-6784-4d6c-bd7e-7312c8f43bfd")
+			(uuid "db32b339-60fa-4410-9e78-7148ceb2e35e")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -6163,16 +6283,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "bc813157-696e-49aa-a16e-154c35ab9d6f")
 		(at 110.731074 87.710321 90)
 		(property "Reference" "J9"
-			(at -0.000001 5.5 90)
+			(at 0 -4.3 90)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "f0ce007d-5387-4c00-95c4-13a365f380ab")
+			(uuid "455f590e-246c-4b83-a3d3-303a234e1cc4")
 			(effects
 				(font
 					(size 1 1)
@@ -6181,11 +6300,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 7.000001 90)
+			(at 0 1 90)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "54a17c6e-435f-4037-a81e-51650c33ca64")
+			(uuid "1b809ed5-88bc-4981-aed2-be9f0d172467")
 			(effects
 				(font
 					(size 1 1)
@@ -6194,11 +6312,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 90)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e047f783-9d49-4c51-bcce-56f5ca052bf5")
+			(uuid "54a983b1-7ecc-44a2-afef-9902c852b464")
 			(effects
 				(font
 					(size 1 1)
@@ -6207,11 +6325,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 90)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9315eb46-5f51-4566-a26e-36d67c9962cb")
+			(uuid "7e28a2b8-5a4b-48c4-9aef-3c5e04eef2b9")
 			(effects
 				(font
 					(size 1 1)
@@ -6220,11 +6338,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 90)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7e8ec906-7ab3-4d24-8520-1cf34951131b")
+			(uuid "2a82c952-3d2a-4f56-a2c7-03bab2025380")
 			(effects
 				(font
 					(size 1 1)
@@ -6232,68 +6350,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/f3b9421d-f6ca-4282-90a3-5746fc64ba1b")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "c28ab38b-2e42-4e72-86a8-c9dba71324fb")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "0d26603e-a004-4a08-b44c-275b9d090084")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "f0bf9ebe-c648-4d2a-85cd-33e1a06c1d44")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "a8bffb96-5a00-420e-bc2b-65e300ef3122")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "8fc7a4e3-2250-4fa3-8418-1916145b128d")
+			(uuid "606d2e18-bd3e-41f9-9bb5-fc4db6c62ee7")
 		)
-		(fp_line
-			(start 2.600001 1.999998)
-			(end 2.6 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "d432ac0f-f4f2-4461-bc22-c5e755c45334")
-		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.600001 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "5ed1f564-d54e-4c1d-92a7-bbc146d81936")
-		)
-		(fp_arc
-			(start -2.600001 -1.999998)
-			(mid -0.000001 -3.452868)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "ccb619f0-3002-4392-8fe3-e4243e77bcd2")
-		)
-		(fp_arc
-			(start 2.600001 1.999998)
-			(mid 0.000001 3.452868)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "53171fec-7f30-45d0-b330-71e3c630dc5a")
+			(uuid "d65673c9-7f6f-4816-9983-bd26e940e3ed")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.199998 -90)
+			(at 0 2.5 90)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "6fdfde58-0ce1-40d3-9ea6-5ecc9c0991b8")
+			(uuid "27ae9d9b-a2f8-472b-996e-0803cc3848ef")
 			(effects
 				(font
 					(size 1 1)
@@ -6302,10 +6433,9 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.499999 90)
-			(unlocked yes)
+			(at 0 -0.2 90)
 			(layer "F.Fab")
-			(uuid "e6d24d5a-3243-4a0a-a343-c11c4ee785ab")
+			(uuid "36465a5d-a5c8-4058-8dcf-b13980fc95d0")
 			(effects
 				(font
 					(size 1 1)
@@ -6314,15 +6444,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 90)
-			(size 5 6.4)
+			(at 0 -0.3 90)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 20 "/GPIO5")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "f131d9ba-884a-46b9-b8cd-512e98702d1a")
+			(uuid "7706a62a-aae5-4d96-8897-6abd8bf38996")
 		)
 	)
 	(footprint "LED_SMD:LED_0603_1608Metric"
@@ -7132,16 +7262,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "d0c6e803-b34c-42be-b464-680866ba3edd")
 		(at 111.783359 94.354188 108)
 		(property "Reference" "J10"
-			(at 0 5.500001 108)
+			(at 0 -4.3 108)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "90c3a232-7f57-4b3e-a56a-ee4d30afecae")
+			(uuid "bd5b58ce-e180-489c-ad86-a1dd3ac61ff3")
 			(effects
 				(font
 					(size 1 1)
@@ -7150,11 +7279,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 108)
+			(at 0 1 108)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "e1579530-b60e-430a-92fe-375d64ee9967")
+			(uuid "fc01c38b-3bdf-4077-968f-eb728df3b2b6")
 			(effects
 				(font
 					(size 1 1)
@@ -7163,11 +7291,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 5.999999 108)
+			(at 0 0 108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "05d55ad7-8b68-4fce-a5fd-a65fdaa54c7f")
+			(uuid "b9090946-6166-444d-9617-651b9ce80aac")
 			(effects
 				(font
 					(size 1 1)
@@ -7176,11 +7304,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 5.999999 108)
+			(at 0 0 108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d41e2452-c582-456e-a64b-e0cffd3847c2")
+			(uuid "ce691ab8-0975-4161-bf91-95dfb76726d0")
 			(effects
 				(font
 					(size 1 1)
@@ -7189,11 +7317,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 5.999999 108)
+			(at 0 0 108)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9b52c915-16da-4b7f-bad1-79c800d5aa1e")
+			(uuid "a3249906-5e32-4eff-bbdb-6fff0c5ce63f")
 			(effects
 				(font
 					(size 1 1)
@@ -7201,68 +7329,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/ff7d7884-460c-4578-9634-d6b9affc9e95")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.200001 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "6cb2a14a-722d-4853-9e89-7888371c249d")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "ec2436b5-8d89-44e7-88f2-b1da8ea67bb7")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "f97c49c1-9953-4d93-a637-e898d8a4ae19")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.599999) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "dfc00744-a000-4212-aa10-479265981ab3")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "a94a199d-b358-4a6e-b9ad-9ead0c9b9050")
+			(uuid "4cf816be-d741-4124-93a3-4573da27a69d")
 		)
-		(fp_line
-			(start 2.600002 2.000002)
-			(end 2.599999 -1.999999)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "c23a487d-eb6a-4e7e-9676-18a201fa9818")
-		)
-		(fp_line
-			(start -2.599999 1.999999)
-			(end -2.600002 -2.000002)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "bc05e006-bdb0-4108-b4ae-c1c637965649")
-		)
-		(fp_arc
-			(start -2.600002 -2.000002)
-			(mid 0.000001 -3.45287)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "3341b48f-ac55-4e68-bad8-6db9b990c20d")
-		)
-		(fp_arc
-			(start 2.600002 2.000002)
-			(mid -0.000001 3.45287)
-			(end -2.599999 1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "03c25699-1d74-4e26-a571-28b10eef963f")
+			(uuid "cb205750-ea8d-4b61-a984-680ee698deb0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 -72)
+			(at 0 -0.2 108)
 			(layer "F.Fab")
-			(uuid "95d2c0c4-7b75-4b41-b2b2-084d3d2cf7af")
+			(uuid "2e6897f8-2408-482d-92ec-a40cbc565010")
 			(effects
 				(font
 					(size 1 1)
@@ -7271,10 +7411,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.499997 108)
+			(at 0 2.5 108)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "bec0bbdd-b843-4478-ac4b-73a6ad074d66")
+			(uuid "44f3a6e4-9151-4e29-92cd-f0513c298963")
 			(effects
 				(font
 					(size 1 1)
@@ -7283,27 +7423,26 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 108)
-			(size 5 6.4)
+			(at 0 -0.3 108)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 21 "/GPIO6")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "d86d4040-3599-4fe0-8766-d954b7219bc8")
+			(uuid "b363b002-6ff8-42fe-9ff0-6abac9c27dbf")
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "d298c570-e804-4bff-b1fb-7a1c1491ee7a")
 		(at 132.231072 109.210323 180)
 		(property "Reference" "J14"
-			(at -0.000001 5.5 180)
+			(at 0 -4.3 180)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1ac33e47-81bd-44b9-9955-7fc0558a4b4d")
+			(uuid "c75b1a36-a5bb-40c5-89f9-4e09e8325816")
 			(effects
 				(font
 					(size 1 1)
@@ -7312,11 +7451,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at 0 7.000001 180)
+			(at 0 1 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "13b5b3aa-73f0-4cce-98aa-b743be4d970a")
+			(uuid "5b3aef57-325e-4229-88ce-45c998021095")
 			(effects
 				(font
 					(size 1 1)
@@ -7325,11 +7463,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 6 180)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d570e15a-bfe8-4578-8675-d7d37f654af2")
+			(uuid "87681ce4-d5ab-46c6-9884-6fa91d7438d7")
 			(effects
 				(font
 					(size 1 1)
@@ -7338,11 +7476,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 6 180)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1f308161-2f58-40a0-b465-5c4cc3a54c5a")
+			(uuid "cf5ca014-e975-4380-baec-9c80f0ff2ea9")
 			(effects
 				(font
 					(size 1 1)
@@ -7351,11 +7489,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 6 180)
+			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a7c550f4-2e59-4009-a6fc-3a8f1ff7dc9c")
+			(uuid "2c4584fd-7664-415a-870d-5e79066f4622")
 			(effects
 				(font
 					(size 1 1)
@@ -7363,69 +7501,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/6579e123-61d0-4ae2-877d-013c73a8ba88")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.2 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "0cc2cfb3-e03e-47a8-b05d-afa5225e0f5d")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "95e2247d-3524-4baa-8bae-1b10faf5b5ea")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "8f2635a0-5bb8-4101-b041-085864a4500f")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "0bfce1bb-173d-4cf4-a205-ed2f090fbe14")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "5ae5a083-615a-4d3a-b69e-639664232cf0")
+			(uuid "f4e77fee-6cd8-46d1-9c34-d7f4eb1cbfa0")
 		)
-		(fp_line
-			(start 2.600001 1.999998)
-			(end 2.6 -2)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "fee40a35-ca76-4624-a76e-22d327d2fbbb")
-		)
-		(fp_line
-			(start -2.6 2)
-			(end -2.600001 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "ce3bf286-4faf-43c7-aff1-c2efa52e7ca0")
-		)
-		(fp_arc
-			(start 2.600001 1.999998)
-			(mid 0.000001 3.452868)
-			(end -2.6 2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "5a248333-1a11-43bd-a8c3-823f522f80dd")
-		)
-		(fp_arc
-			(start -2.600001 -1.999998)
-			(mid -0.000001 -3.452868)
-			(end 2.6 -2)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "6c4892aa-8de4-44b5-8fdf-79c90cd68f80")
+			(uuid "4f81837f-fe66-4f2c-844e-65ffeaa8ec1e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.499999 180)
+			(at 0 2.5 180)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "6b68e5a7-a31d-414d-a2a7-dd4245b4ffad")
+			(uuid "9fd9e779-a784-4d1f-a74a-da01419c0043")
 			(effects
 				(font
 					(size 1 1)
@@ -7434,9 +7584,9 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.199998 180)
+			(at 0 -0.2 180)
 			(layer "F.Fab")
-			(uuid "c92c1036-6fd5-4bb5-9537-cd046de92352")
+			(uuid "fdf8650a-ecf9-44e2-a14c-fdde2c052069")
 			(effects
 				(font
 					(size 1 1)
@@ -7445,15 +7595,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 180)
-			(size 5 6.4)
+			(at 0 -0.3 180)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 25 "/GPIO10")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "27bdeb99-ab3e-4f46-9533-85f5b7147940")
+			(uuid "936b94fd-07f4-42b6-8bcd-684574e02b9c")
 		)
 	)
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
@@ -7716,7 +7866,7 @@
 		(descr "USB Type C, right-angle, SMT, https://datasheet.lcsc.com/lcsc/2204071530_G-Switch-GT-USB-7010ASV_C2988369.pdf")
 		(tags "USB C Type-C Receptacle SMD")
 		(property "Reference" "J2"
-			(at 0.000002 -5.5 333)
+			(at 0.000002 -5.5 -27)
 			(layer "F.SilkS")
 			(uuid "6d593e95-a3d2-427b-bfb7-9729cd27c276")
 			(effects
@@ -7727,7 +7877,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 0.000001 5 333)
+			(at 0.000001 5 -27)
 			(layer "F.Fab")
 			(uuid "48aa5578-d50d-4269-aad2-72d0b9f32be1")
 			(effects
@@ -7909,7 +8059,7 @@
 			(uuid "49de2337-e24f-4d36-9265-e3982c5037ae")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 333)
+			(at 0 0 -27)
 			(layer "F.Fab")
 			(uuid "ec33a3a2-78fc-4e49-8c60-1b24edb1aa3c")
 			(effects
@@ -9630,16 +9780,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "f3c9bb60-0aa2-4fa0-82da-ad07da889ed3")
 		(at 138.874939 108.158038 -162)
 		(property "Reference" "J15"
-			(at 0 5.500001 -162)
+			(at 0 -4.3 -162)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "54e04f49-d49b-4897-b2e4-d93b71c012ca")
+			(uuid "fbfc3e64-f9ae-49ac-9888-aa790d822f7b")
 			(effects
 				(font
 					(size 1 1)
@@ -9648,11 +9797,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000001 -162)
+			(at 0 1 -162)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "ccd80458-a4bd-424e-87f9-54ea084ce7d5")
+			(uuid "5e266b80-e736-4341-b61b-8a176da7532a")
 			(effects
 				(font
 					(size 1 1)
@@ -9661,11 +9809,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0 5.999999 -162)
+			(at 0 0 -162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c1d5ffc6-6f47-460f-8d74-0ae3b76fb3c0")
+			(uuid "15923970-4ba1-4508-b4ed-45f4e0e7e06a")
 			(effects
 				(font
 					(size 1 1)
@@ -9674,11 +9822,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 5.999999 -162)
+			(at 0 0 -162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ccdd6d85-dda5-4c46-87e8-dff5ce0779b2")
+			(uuid "dd17ff0d-74d9-4509-b3ec-5116bce5dc26")
 			(effects
 				(font
 					(size 1 1)
@@ -9687,11 +9835,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 5.999999 -162)
+			(at 0 0 -162)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "029dfbfb-0fe5-404f-8644-794b68a483ec")
+			(uuid "1ef83926-af2c-450c-89fe-1c8f21e02008")
 			(effects
 				(font
 					(size 1 1)
@@ -9699,68 +9847,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d2b3e322-42da-4df2-ba9c-b3e14dc85b22")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.200001 0.000001)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "9ebd3028-7a3f-40a1-95dc-c0af8089585f")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "7cb6d7db-54e8-42f0-97e8-cc95778803d4")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "de537281-757c-4b42-8f88-a2864acbf813")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.599999) (xy -1.9 4.5) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "b002af71-c284-4609-83a3-277f56a526e7")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "18c0be11-8f5c-4eb6-9dd8-58beef39199a")
+			(uuid "8232348e-deff-405b-9c36-885612597fd1")
 		)
-		(fp_line
-			(start 2.600002 2.000002)
-			(end 2.599999 -1.999999)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "73d45bc1-4d66-42b1-9e77-2501bb869727")
-		)
-		(fp_line
-			(start -2.599999 1.999999)
-			(end -2.600002 -2.000002)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "8d6cb304-8749-4eaf-a4dd-6d14964fc51d")
-		)
-		(fp_arc
-			(start 2.600002 2.000002)
-			(mid -0.000001 3.45287)
-			(end -2.599999 1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "a51610f5-e16f-4df6-9fcf-199262405456")
-		)
-		(fp_arc
-			(start -2.600002 -2.000002)
-			(mid 0.000001 -3.45287)
-			(end 2.599999 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "96278203-01b7-4356-8009-240943fac645")
+			(uuid "34a3f63d-dcf8-45d3-bae4-e04a5c33516e")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -0.2 -162)
 			(layer "F.Fab")
-			(uuid "16cfeda4-a83d-4627-b5df-0996438a97df")
+			(uuid "009efbff-f604-4158-b995-27ee52f8332b")
 			(effects
 				(font
 					(size 1 1)
@@ -9769,10 +9929,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at -0.000001 8.499997 -162)
+			(at 0 2.5 -162)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "bba9324e-8b46-42ed-964d-224de4a38167")
+			(uuid "c1e45f77-6adb-460e-ab11-498753edec0a")
 			(effects
 				(font
 					(size 1 1)
@@ -9781,15 +9941,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 198)
-			(size 5 6.4)
+			(at 0 -0.3 198)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 26 "/GPIO11")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "2c042efe-5e62-47e9-adc4-bda2d6e975b1")
+			(uuid "b6aae819-5d18-45e2-946c-e87b7410c912")
 		)
 	)
 	(footprint "LED_SMD:LED_0603_1608Metric"
@@ -10024,16 +10184,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "fbab15e8-0f51-4740-bbf0-666b60a0a9de")
 		(at 144.868457 105.104188 -144)
 		(property "Reference" "J16"
-			(at 0.000001 5.499999 -144)
+			(at 0 -4.3 -144)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "681775a2-eb79-443e-99de-c2fa83053e4a")
+			(uuid "76db5c2a-1d35-43d0-b0a5-67757223b646")
 			(effects
 				(font
 					(size 1 1)
@@ -10042,11 +10201,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000002 -144)
+			(at 0 1 -144)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "518c9a05-54aa-487e-bd6b-bcbb789230fc")
+			(uuid "1f4f13e5-79be-4723-aef5-3ae490580928")
 			(effects
 				(font
 					(size 1 1)
@@ -10055,11 +10213,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0.000001 6 -144)
+			(at 0 0 -144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "054a5049-c824-4e9b-ade9-b062c4b5b76a")
+			(uuid "7ffaa5ca-7e89-4926-8ff2-238dca0238e4")
 			(effects
 				(font
 					(size 1 1)
@@ -10068,11 +10226,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0.000001 6 -144)
+			(at 0 0 -144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c800ea03-9212-4482-92f7-107a21532c07")
+			(uuid "e5578e22-6050-4fb4-8b23-fd9ff6aef0d0")
 			(effects
 				(font
 					(size 1 1)
@@ -10081,11 +10239,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0.000001 6 -144)
+			(at 0 0 -144)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "75c444f2-74af-477e-8ca6-9e95e75e9143")
+			(uuid "b6006a9a-c4ce-43b2-a0f1-95810e545c32")
 			(effects
 				(font
 					(size 1 1)
@@ -10093,69 +10251,81 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/085298e6-7507-4b9b-9917-24ddc1491abc")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "6a908016-6106-416c-b60d-a60457e27b8a")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "1d0205d6-481b-48fc-8248-48682b40aa4b")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "879eff26-8e4a-4720-b19d-4bc0dcb1b9e5")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.499999) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "2e041455-51ff-4799-b1b4-46419c9f569c")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "02517790-66c9-44c1-95dc-193647241297")
+			(uuid "686b97cf-9ce9-4711-9ce2-2e727a2e4b9f")
 		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.599999 -1.999998)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "888cafd1-baf9-4ef9-86cf-3a1bcf5c6dae")
-		)
-		(fp_line
-			(start -2.599999 1.999998)
-			(end -2.6 -1.999999)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "a9e75ef3-343e-41ac-9add-e2c10ecfb0de")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid -0.000001 3.452868)
-			(end -2.599999 1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "51b76d3d-0409-43b8-9879-3f694682dcfb")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0.000001 -3.452868)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "355a8427-9637-493f-a2b6-d69fbc781742")
+			(uuid "e3c1490c-2fec-4390-b3c4-f4842e5d048d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.500001 -144)
+			(at 0 2.5 -144)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "23d4c51a-c1af-4a28-93fd-dc2cc666a2a9")
+			(uuid "1b8dd565-b2cc-4bbc-abe5-933078a86715")
 			(effects
 				(font
 					(size 1 1)
@@ -10166,7 +10336,7 @@
 		(fp_text user "${REFERENCE}"
 			(at 0 -0.2 -144)
 			(layer "F.Fab")
-			(uuid "317f8f23-203f-4743-bce5-40197746b800")
+			(uuid "85cb4a6d-503f-412e-a488-ce7e8434b7d2")
 			(effects
 				(font
 					(size 1 1)
@@ -10175,15 +10345,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 216)
-			(size 5 6.4)
+			(at 0 -0.3 216)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 27 "/GPIO12")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "7284de63-0291-468d-a77f-3d8dba78ac85")
+			(uuid "c9291ed1-57ce-4e9b-9bd8-2615ed536d5e")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
@@ -10396,16 +10566,15 @@
 			)
 		)
 	)
-	(footprint "lilyPad:LilyPad_Pad"
+	(footprint "lilyPad_PadCustomM3:LilyPadCustomPadM3"
 		(layer "F.Cu")
 		(uuid "fcb7db23-00a0-42cb-b09a-0610f5d9fff8")
 		(at 119.59369 70.316459 36)
 		(property "Reference" "J6"
-			(at 0.000001 5.499999 36)
+			(at 0 -4.3 36)
 			(unlocked yes)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "5f828cad-99c1-44fa-829a-3b683430692a")
+			(uuid "fe719e61-25e8-4c42-8298-15c3ee24b38b")
 			(effects
 				(font
 					(size 1 1)
@@ -10414,11 +10583,10 @@
 			)
 		)
 		(property "Value" "Conn_01x01"
-			(at -0.000001 7.000002 36)
+			(at 0 1 36)
 			(unlocked yes)
 			(layer "F.Fab")
-			(hide yes)
-			(uuid "2b6ee468-a567-4a7e-8cf6-25cb8a9a2d72")
+			(uuid "930c825b-e967-4064-840b-e49864af760b")
 			(effects
 				(font
 					(size 1 1)
@@ -10427,11 +10595,11 @@
 			)
 		)
 		(property "Footprint" "lilyPad:LilyPad_Pad"
-			(at 0.000001 6 36)
+			(at 0 0 36)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "02f945ff-0f74-4fcd-b607-cc03370e6aaf")
+			(uuid "636a03cc-8b52-4e88-99ef-f9f41ee22ce9")
 			(effects
 				(font
 					(size 1 1)
@@ -10440,11 +10608,11 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0.000001 6 36)
+			(at 0 0 36)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea7d9fb7-b19d-4b9b-bdd1-61b9a4ff3822")
+			(uuid "759aa81d-bad5-48bd-8c7a-67dd01ffbea6")
 			(effects
 				(font
 					(size 1 1)
@@ -10453,11 +10621,11 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0.000001 6 36)
+			(at 0 0 36)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e9237558-95ec-4fd7-b140-2a47001929b0")
+			(uuid "5cb64bac-b4f2-4a5f-b34c-8baaa1e469fe")
 			(effects
 				(font
 					(size 1 1)
@@ -10465,69 +10633,80 @@
 				)
 			)
 		)
-		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a5516f91-5972-4d7b-94ad-20baf5ed43fe")
-		(sheetname "Raíz")
-		(sheetfile "lilyPad_RP2040.kicad_sch")
 		(attr through_hole)
 		(fp_circle
-			(center 0 0)
-			(end 3.199999 0)
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "24ebca8a-d20b-4f02-80ce-976e25e34a2b")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.632329) (xy -1.9 4.467671) (xy 1.9 4.467671) (xy 2.5 -0.632329)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Cu")
+			(uuid "4279ece4-d681-47c6-8447-0f3b26554183")
+		)
+		(fp_circle
+			(center 0 -0.6)
+			(end 2.5 -0.6)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "cca983b2-5d48-4999-ab68-c5154fc3103f")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -0.6) (xy -1.9 4.499999) (xy 1.9 4.5) (xy 2.5 -0.6)
+			)
+			(stroke
+				(width 0.01)
+				(type solid)
+			)
+			(fill solid)
+			(layer "F.Mask")
+			(uuid "27e0da85-15ee-478f-b193-1cf6a07a2767")
+		)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.2 -0.3)
 			(stroke
 				(width 0.15)
 				(type solid)
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "baa99759-2c88-4a7f-915b-1e7e2138bd88")
+			(uuid "ac4b1458-6633-44bd-96ff-aa54cdce52ef")
 		)
-		(fp_line
-			(start -2.599999 1.999998)
-			(end -2.6 -1.999999)
+		(fp_circle
+			(center 0 -0.3)
+			(end 3.45 -0.3)
 			(stroke
 				(width 0.05)
-				(type default)
+				(type solid)
 			)
+			(fill none)
 			(layer "F.CrtYd")
-			(uuid "f12b24b6-0204-4ac1-a606-72978e7b2c88")
-		)
-		(fp_line
-			(start 2.6 1.999999)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "d75f89e9-f993-4cfc-b256-f1e3083c3825")
-		)
-		(fp_arc
-			(start -2.6 -1.999999)
-			(mid 0.000001 -3.452868)
-			(end 2.599999 -1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "4e0d864a-f14f-48fb-9964-adaa2365aafb")
-		)
-		(fp_arc
-			(start 2.6 1.999999)
-			(mid -0.000001 3.452868)
-			(end -2.599999 1.999998)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(layer "F.CrtYd")
-			(uuid "1bd27643-815f-4582-a1f4-1aa30ae9abe6")
+			(uuid "e1d41ea7-b749-433f-bf31-300afe424e3c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 8.500001 36)
-			(unlocked yes)
+			(at 0 -0.2 36)
 			(layer "F.Fab")
-			(uuid "277fad63-e0a2-4f54-bd6d-b49760628daf")
+			(uuid "3e46271a-025b-407c-a28c-fbac5b2c2879")
 			(effects
 				(font
 					(size 1 1)
@@ -10536,9 +10715,10 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -0.2 36)
+			(at 0 2.5 36)
+			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "3c812c7a-586b-4343-82c5-a5200c68652e")
+			(uuid "eea92d76-fd81-43c1-8ffc-640aa14c350d")
 			(effects
 				(font
 					(size 1 1)
@@ -10547,15 +10727,15 @@
 			)
 		)
 		(pad "1" thru_hole oval
-			(at 0 0 36)
-			(size 5 6.4)
+			(at 0 -0.3 36)
+			(size 4 4)
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 17 "/GPIO2")
 			(pinfunction "Pin_1")
 			(pintype "passive")
-			(uuid "398e5807-f242-44d2-8129-23ce900cede9")
+			(uuid "42afb448-c2dc-4c34-926a-ac07749388d5")
 		)
 	)
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
