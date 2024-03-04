@@ -11,6 +11,6 @@
  
 ![alt text](https://github.com/darioGg3/lilyPad_RP2040/blob/main/photos/3d_rennder_front.JPG)
 
-![alt text](https://github.com/darioGg3/lilyPad_RP2040/blob/main/photos/3d_rennder_back.JPG)
-
-![alt text](https://github.com/darioGg3/lilyPad_RP2040/blob/main/photos/pcb.png)
+<p align="center">
+  <img width="613" height="582" src="https://github.com/darioGg3/lilyPad_RP2040/blob/main/photos/pcb.png">
+</p>
